@@ -50,10 +50,12 @@ class TestDateParser(unittest.TestCase):
 
         self.assertEqual(expected, result)
    
-    def test_invalid_date_string_raises_value_error(self):
-        with self.assertRaises(ValueError):
-            parser = DateParser("this is not a date")
-            parser.parse()
+    def test_invalid_date_str_returns_none(self):
+        parser = DateParser("asdas")
+        result = parser.parse()
+        expected = None
+
+        self.assertEqual(expected, result)
 
 
 if __name__ == '__main__':
