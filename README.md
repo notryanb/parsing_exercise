@@ -8,6 +8,26 @@ Then run the test suite with the following command.
 You will see many failures.
 The objective is to fill out the `parse(self)` method body with the correct code to get the test suite to pass.
 
+# Fork this Repository
+
+Making a `fork` of this repo will let you have your own copy of it under your github username.
+This is helpful if you want to push changes up. 
+The alternative is to do a regular clone,
+but then if you try to push changes, the remote will be pointing to `notryanb/parsing_exercise`.
+You will not have permissions to do this.
+Forking will create a new repo under your github account with the same name but pointing to `your_github_username/parsing_exercise`.
+
+- Fork this repo by clicking the "Fork" button in the upper right-hand portion of the screen.
+- Go to "Your repositories"
+- Click on "parsing_exercise"
+- Click clone
+- Ensure your current terminal directory IS NOT inside another git repo.
+- You can see if this is true by running any git command such as `git status`.A
+- If it fails with a "fatal error", you are safe to clone a git repo into that directory.
+- Copy and paste the code Github gave you into your terminal.
+- If it succeeds, then `cd parsing_exercise` and you may move onto the next section.
+
+
 # How to get started solving this exercise
 
 When running the test suite, you will see a lot of error output in your terminal indicating the tests are failling.
