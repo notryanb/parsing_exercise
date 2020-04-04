@@ -22,9 +22,10 @@ Forking will create a new repo under your github account with the same name but 
 - Click on "parsing_exercise"
 - Click clone
 - Ensure your current terminal directory IS NOT inside another git repo.
-- You can see if this is true by running any git command such as `git status`.A
+- You can see if this is true by running any git command such as `git status`.
 - If it fails with a "fatal error", you are safe to clone a git repo into that directory.
-- Copy and paste the code Github gave you into your terminal.
+- If `git status` succeeds, then you are currently inside another repository and should not clone this repository into it.
+- Copy and paste the code Github gave you into your terminal once you've verified you are not currently in a git repository.
 - If it succeeds, then `cd parsing_exercise` and you may move onto the next section.
 
 
