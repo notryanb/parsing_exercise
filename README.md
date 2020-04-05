@@ -3,7 +3,7 @@
 To run the test code, ensure you are in root of this git directory.
 Then run the test suite with the following command.
 
-`python -m unittest date_parser_tests`
+`python3 -m unittest date_parser_tests`
 
 You will see many failures.
 The objective is to fill out the `parse(self)` method body with the correct code to get the test suite to pass.
