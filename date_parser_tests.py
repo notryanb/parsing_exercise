@@ -36,6 +36,27 @@ class TestDateParser(unittest.TestCase):
 
         self.assertEqual(expected, result)
 
+    def test_can_parse_m_d_yy_as_forward_slash(self):
+        parser = DateParser("4/1/20")
+        result = parser.parse()
+        expected = datetime.datetime(2020, 4, 1, 0, 0)
+
+        self.assertEqual(expected, result)
+
+    def test_can_parse_m_d_yy_as_dashed(self):
+        parser = DateParser("4-1-20")
+        result = parser.parse()
+        expected = datetime.datetime(2020, 4, 1, 0, 0)
+
+        self.assertEqual(expected, result)
+    
+    def test_can_parse_m_d_yy_as_underscore(self):
+        parser = DateParser("4_1_20")
+        result = parser.parse()
+        expected = datetime.datetime(2020, 4, 1, 0, 0)
+
+        self.assertEqual(expected, result)
+
     def test_can_parse_mm_dd_yyyy_as_dash(self):
         parser = DateParser("04-11-2020")
         result = parser.parse()
